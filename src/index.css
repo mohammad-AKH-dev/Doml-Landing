@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import url(' href="https://db.onlinewebfonts.com/c/106ccd1b14f16971c332e309cec7d90b?family=Font" rel="stylesheet"');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-title: "Font";
+  --font-main: "Montserrat";
+  --breakpoint-sm: 40rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 60rem;
+  --breakpoint-xl: 70rem;
+  --breakpoint-2xl: 84rem
+}
+
+
+body {
+  box-sizing: border-box !important;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark a {
+  color: #fff !important;
+}
