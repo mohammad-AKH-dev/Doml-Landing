@@ -4,7 +4,7 @@ import Button from "./modules/Button";
 
 function Marketing() {
   return (
-    <section className="marketing-section mt-32 container mx-auto" id="marketing">
+    <section className="marketing-section mt-32 container mx-auto" id="marketplace">
       <div className="marketing-section__content-wrapper flex flex-col lg:flex-row items-center justify-between">
         <div className="marketing-section__left">
           <img src="/images/magnet.png" />

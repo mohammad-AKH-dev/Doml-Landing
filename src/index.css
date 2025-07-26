@@ -49,6 +49,18 @@ html.dark a {
       );
 }
 
+.btn-email {
+  border: 1px solid transparent;
+  background: padding-box linear-gradient(rgb(23 23 23), rgb(23 23 23)),
+    border-box
+      linear-gradient(
+        to right,
+        rgb(255 45 247 / 0.9),
+        rgb(82 0 255 / 0.9),
+        rgb(0 240 255 / 0.9)
+      );
+}
+
 @media all and (max-width: 1180px) {
   .product-img__wrapper {
     left: 5.5rem;
@@ -62,6 +74,14 @@ html.dark a {
   }
 }
 
+@media all and (max-width: 1040px) {
+  .btn-wrapper {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
+
 @media all and (max-width: 1010px) {
   .product-img__wrapper {
     left: 5.5rem;
@@ -70,12 +90,24 @@ html.dark a {
 }
 
 @media all and (max-width: 768px) {
-  .team-member-cart {
+  .team-member-cart,
+  .pricing-section__content-wrapper {
     background: linear-gradient(
       to right,
       rgb(255 45 247 / 0.9),
       rgb(82 0 255 / 0.9),
       rgb(0 240 255 / 0.9)
     );
+  }
+  .btn-wrapper {
+    align-items: center;
+  }
+  .btn-email {
+    background: rgba(193, 193, 193, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(193, 193, 193, 0.71);
   }
 }

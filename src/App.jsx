@@ -5,6 +5,7 @@ import Explore from "./components/Explore";
 import Landing from "./components/Landing";
 import Marketing from "./components/Marketing";
 import Navbar from "./components/Navbar";
+import Pricing from "./components/Pricing";
 import Product from "./components/Product";
 import Team from "./components/Team";
 import Sidebar from "./components/modules/Sidebar";
@@ -21,6 +22,7 @@ function App() {
       <Team/>
       <EnterPrice/>
       <Marketing/>
+      <Pricing/>
      </div>
   );
 }
