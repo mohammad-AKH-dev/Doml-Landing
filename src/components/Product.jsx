@@ -21,7 +21,7 @@ function Product() {
             analytics and{" "}
             <span className="text-[#0075FF]">strategic execution.</span>
           </p>
-          <div className="w-full h-[1px] product-border mb-3 mx-auto lg:mx-0 bg-white max-w-[400px] mt-6"></div>
+          <div className="w-full h-[1px] product-border mb-3 mx-auto lg:mx-0 bg-[#000] dark:bg-white max-w-[400px] mt-6"></div>
           <Button title={'Learn More'}/>
         </div>
         <div className="product-section__right relative  w-full  sm:w-[75%] lg:w-[50%] flex items-center justify-center">

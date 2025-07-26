@@ -61,7 +61,7 @@ function Team() {
   ]);
   return (
     <section className="team-section mt-32 container mx-auto" id="team">
-      <div className="team-section__content-wrapper rounded-2xl bg-[#171717]">
+      <div className="team-section__content-wrapper rounded-2xl text-white dark:bg-[#171717]!">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           {testimonials.map((testimonial,index) => (
             <SwiperSlide key={index}>

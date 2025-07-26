@@ -21,7 +21,7 @@ function Explore() {
             relationships. Learn More about how DOML can help you do just that -
             all with a simple, easy-to-use platform.
           </p>
-           <div className="w-full explore-border h-[1px] mb-3 mx-auto lg:mx-0 bg-white max-w-[400px] mt-6"></div>
+           <div className="w-full explore-border h-[1px] mb-3 mx-auto lg:mx-0 bg-[#000] dark:bg-white max-w-[400px] mt-6"></div>
           <Button title={'Learn More'}/>
         </div>
       </div>

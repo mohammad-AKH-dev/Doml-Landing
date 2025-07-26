@@ -28,6 +28,18 @@ html.dark a {
 
 .button {
   border: 1px solid transparent;
+  background: padding-box linear-gradient(rgb(255 255 255), rgb(255 255 255)),
+    border-box
+      linear-gradient(
+        to right,
+        rgb(255 45 247 / 0.9),
+        rgb(82 0 255 / 0.9),
+        rgb(0 240 255 / 0.9)
+      );
+}
+
+html.dark .button {
+  border: 1px solid transparent;
   background: padding-box linear-gradient(rgb(000 000 000), rgb(000 000 000)),
     border-box
       linear-gradient(
@@ -38,7 +50,7 @@ html.dark a {
       );
 }
 
-.button:hover {
+html.dark .button:hover {
   background: padding-box linear-gradient(rgb(000 000 000), rgb(000 000 000)),
     border-box
       linear-gradient(
@@ -48,9 +60,10 @@ html.dark a {
         rgb(0 240 255 / 0.9)
       );
 }
+
 
 .team-member-img {
-   border: 3px solid transparent;
+  border: 3px solid transparent;
   background: padding-box linear-gradient(rgb(000 000 000), rgb(000 000 000)),
     border-box
       linear-gradient(
@@ -61,7 +74,7 @@ html.dark a {
       );
 }
 
-.btn-email {
+html.dark .btn-email {
   border: 1px solid transparent;
   background: padding-box linear-gradient(rgb(23 23 23), rgb(23 23 23)),
     border-box
@@ -72,6 +85,32 @@ html.dark a {
         rgb(0 240 255 / 0.9)
       );
 }
+
+.btn-email {
+    background: rgba(193, 193, 193, 0.25);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.8px);
+    -webkit-backdrop-filter: blur(3.8px);
+    border: 1px solid rgba(193, 193, 193, 0.71);
+  }
+
+.team-member-cart , .pricing-section__content-wrapper{
+  background: linear-gradient(
+    to right,
+    rgb(255 45 247 / 0.9),
+    rgb(82 0 255 / 0.9),
+    rgb(0 240 255 / 0.9)
+  );
+}
+
+@media all and (min-width: 768px) {
+  html.dark .team-member-cart , html.dark .pricing-section__content-wrapper {
+  background: #171717 !important
+}
+
+}
+
 
 @media all and (max-width: 1180px) {
   .product-img__wrapper {
@@ -101,15 +140,21 @@ html.dark a {
   }
 }
 
+
 @media all and (max-width: 768px) {
   .team-member-cart,
-  .pricing-section__content-wrapper , .copy-right-border , .product-border , .explore-border , .enter-price-border , .market-border {
+  .pricing-section__content-wrapper,
+  .copy-right-border,
+  .product-border,
+  .explore-border,
+  .enter-price-border,
+  .market-border {
     background: linear-gradient(
       to right,
       rgb(255 45 247 / 0.9),
       rgb(82 0 255 / 0.9),
       rgb(0 240 255 / 0.9)
-    );
+    ) !important;
   }
   .btn-wrapper {
     align-items: center;
