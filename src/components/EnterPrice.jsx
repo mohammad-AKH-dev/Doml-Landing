@@ -4,7 +4,7 @@ import Button from "./modules/Button";
 
 function EnterPrice() {
   return (
-    <section className="enter-price__section mt-32 container mx-auto">
+    <section className="enter-price__section mt-32 container mx-auto" id="enterprice">
       <div className="enter-price__section-content flex flex-col-reverse lg:flex-row items-center gap-y-6 lg:justify-between mt-2">
         <div className="enter-price__section-left text-center lg:text-start w-full  sm:w-[75%] lg:w-[50%]">
           <GradientText />
@@ -24,7 +24,7 @@ function EnterPrice() {
           <Button title={"Learn More"} />
         </div>
         <div className="enter-price__section-right  w-full  sm:w-[75%] lg:w-[50%] flex items-center justify-center">
-          <img src="/images/pink-cube.png" alt="" />
+          <img src="/images/pink-cube.png"/>
         </div>
       </div>
     </section>
