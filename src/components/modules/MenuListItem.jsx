@@ -1,13 +1,13 @@
 import React from "react";
 
 function MenuListItem(props) {
-  const { title, href, children } = props;
+  const { title, href, children , customStyle , linkStyle} = props;
 
   return (
-    <li className="menu-list__item">
+    <li className={`menu-list__item ${customStyle}`}>
       <a
         href={href}
-        className="menu-list__item-link flex items-center justify-center capitalize font-light"
+        className={`menu-list__item-link flex items-center ${linkStyle ? linkStyle : 'justify-center'} capitalize font-light`}
       >
         {title}
         {children}
