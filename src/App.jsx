@@ -1,4 +1,5 @@
 import "./App.css";
+import Companies from "./components/Companies";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -9,6 +10,7 @@ function App() {
       <Navbar/>
       <Sidebar/>
       <Landing/>
+      <Companies/>
      </div>
   );
 }

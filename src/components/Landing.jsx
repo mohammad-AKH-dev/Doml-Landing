@@ -16,10 +16,11 @@ function Landing() {
   },[])
 
   return (
-    <section className="landing-section mt-24 container mx-auto h-[1000px]">
+    <section className="landing-section mt-24 container mx-auto">
       <div className="landing-section-content__wrapper flex flex-col-reverse md:flex-row gap-y-12 items-center justify-between">
         <div className="landing-content__left-section text-center md:text-start">
           <h1 className="landing-section__title text-[32px] sm:text-[45px] md:text-[32px] lg:text-[40px] xl:text-[60px] font-sans tracking-wider flex flex-col">
+            {/* gradient text */}
             <FancyText
               gradient={{ from: "#5200FF", to: "#FF2DF7", type: "linear" }}
               animate={animate}
