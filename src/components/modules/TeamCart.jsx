@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import FancyText from "@carefully-coded/react-text-gradient";
 import { AiFillDiscord } from "react-icons/ai";
 
-function TeamCart() {
+function TeamCart(props) {
   const [animate, setAnimate] = useState(false);
+  const { img, name, quote, platform, children , role} = props;
 
   useEffect(() => {
     const myInterVal = setInterval(() => {
@@ -13,14 +14,14 @@ function TeamCart() {
     return () => clearInterval(myInterVal);
   }, []);
   return (
-    <div className="team-member-cart rounded-2xl p-12 xl:p-24 flex flex-col md:flex-row items-center md:items-start justify-center">
-      <div className="team-member-cart__img">
+    <div className="team-member-cart rounded-2xl p-12 xl:p-24 flex flex-col md:flex-row gap-x-10 items-center md:items-start justify-center">
+      <div className="team-member-cart__img rounded-4xl">
         <img
-          src="/images/team/member-1.png"
-          className="mn:ml-4 ml-4 sm:ml-8 md:ml-0 min-w-[282px] min-h-[282px] object-contain"
+          src={img}
+          className=" team-member-img  max-w-[282px] mn:max-h-[282px] rounded-4xl  mn:min-w-[282px] mn:min-h-[282px] object-contain"
         />
       </div>
-      <div className="team-member-cart__infos text-center md:text-start md:pt-6 xl:py-2">
+      <div className="team-member-cart__infos text-center md:text-start mt-6 pt-6 xl:py-2">
         <p
           className="team-member-desc text-[15px] sm:text-[17px] -mt-4 
         mb-2 md:mt-0 md:mb-0 md:text-[15px] lg:text-[17px]  xl:text-[21px] font-sans"
@@ -34,16 +35,18 @@ function TeamCart() {
           animate={animate}
           animateTo={{ from: "#6DEDD0", to: "#7AE23A" }}
           animateDuration={2000}
-          className="text-[22px] hidden! md:inline-block xl:text-[25px] mt-2 mb-2 md:mb-0"
+          className="text-[22px] hidden! md:inline-block! xl:text-[25px] mt-2 mb-2 md:mb-0"
         >
-          Amaka Micheal
+          {name}
         </FancyText>
-        <h4 className="text-[22px] block md:hidden xl:text-[25px] mt-2 mb-2 md:mb-0">Amaka Micheal</h4>
+        <h4 className="text-[22px] block md:hidden xl:text-[25px] mt-2 mb-2 md:mb-0">
+          {name}
+        </h4>
         <span className="team-member-role block text-[15px] sm:text-[17px] xl:text-[21px] font-sans">
-          Media Executive, Buying & Control
+          {role}
         </span>
-        <div className="team-member__platform font-sans flex items-center justify-center md:justify-start gap-x-1 mt-2">
-          <AiFillDiscord className="text-[21px] xl:text-[24px]" /> Discord
+        <div className="team-member__platform font-sans flex items-center justify-center md:justify-start gap-x-3 mt-2">
+          {children} {platform}
         </div>
       </div>
     </div>

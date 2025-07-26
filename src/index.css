@@ -49,6 +49,18 @@ html.dark a {
       );
 }
 
+.team-member-img {
+   border: 3px solid transparent;
+  background: padding-box linear-gradient(rgb(000 000 000), rgb(000 000 000)),
+    border-box
+      linear-gradient(
+        to right,
+        rgb(255 45 247 / 0.9),
+        rgb(82 0 255 / 0.9),
+        rgb(0 240 255 / 0.9)
+      );
+}
+
 .btn-email {
   border: 1px solid transparent;
   background: padding-box linear-gradient(rgb(23 23 23), rgb(23 23 23)),
