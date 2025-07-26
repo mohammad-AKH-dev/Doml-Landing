@@ -8,22 +8,24 @@ import Navbar from "./components/Navbar";
 import Pricing from "./components/Pricing";
 import Product from "./components/Product";
 import Team from "./components/Team";
+import CopyRight from "./components/modules/CopyRight";
 import Sidebar from "./components/modules/Sidebar";
 function App() {
-
-  return ( 
-     <div className="main-page px-8">
-      <Navbar/>
-      <Sidebar/>
-      <Landing/>
-      <Companies/>
-      <Product/>
-      <Explore/>
-      <Team/>
-      <EnterPrice/>
-      <Marketing/>
-      <Pricing/>
-     </div>
+  return (
+    <div className="main-page px-8">
+      <Navbar />
+      <Sidebar />
+      <Landing />
+      <Companies />
+      <Product />
+      <Explore />
+      <Team />
+      <EnterPrice />
+      <Marketing />
+      <Pricing />
+      <Companies />
+      <CopyRight />
+    </div>
   );
 }
 

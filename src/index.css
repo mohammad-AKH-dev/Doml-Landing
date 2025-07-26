@@ -91,7 +91,7 @@ html.dark a {
 
 @media all and (max-width: 768px) {
   .team-member-cart,
-  .pricing-section__content-wrapper {
+  .pricing-section__content-wrapper , .copy-right-border , .product-border , .explore-border , .enter-price-border , .market-border {
     background: linear-gradient(
       to right,
       rgb(255 45 247 / 0.9),
@@ -109,5 +109,12 @@ html.dark a {
     backdrop-filter: blur(3.8px);
     -webkit-backdrop-filter: blur(3.8px);
     border: 1px solid rgba(193, 193, 193, 0.71);
+  }
+}
+
+@media all and (max-width: 370px) {
+  .my-btn {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
   }
 }
