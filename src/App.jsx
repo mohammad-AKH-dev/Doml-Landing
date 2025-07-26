@@ -1,5 +1,6 @@
 import "./App.css";
 import Companies from "./components/Companies";
+import EnterPrice from "./components/EnterPrice";
 import Explore from "./components/Explore";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
@@ -17,6 +18,7 @@ function App() {
       <Product/>
       <Explore/>
       <Team/>
+      <EnterPrice/>
      </div>
   );
 }

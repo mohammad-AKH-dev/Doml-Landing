@@ -9,7 +9,7 @@ import TeamCart from "./modules/TeamCart";
 
 function Team() {
   return (
-    <section className="team-section mt-32 container mx-auto">
+    <section className="team-section mt-32 container mx-auto" id="team">
       <div className="team-section__content-wrapper rounded-2xl bg-[#171717]">
         <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
           <SwiperSlide>
