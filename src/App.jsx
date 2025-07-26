@@ -4,6 +4,7 @@ import Explore from "./components/Explore";
 import Landing from "./components/Landing";
 import Navbar from "./components/Navbar";
 import Product from "./components/Product";
+import Team from "./components/Team";
 import Sidebar from "./components/modules/Sidebar";
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Companies/>
       <Product/>
       <Explore/>
+      <Team/>
      </div>
   );
 }

@@ -39,7 +39,7 @@ html.dark a {
 }
 
 .button:hover {
-    background: padding-box linear-gradient(rgb(000 000 000), rgb(000 000 000)),
+  background: padding-box linear-gradient(rgb(000 000 000), rgb(000 000 000)),
     border-box
       linear-gradient(
         to right,
@@ -51,9 +51,8 @@ html.dark a {
 
 @media all and (max-width: 1180px) {
   .product-img__wrapper {
-    left: 5.5rem ;
+    left: 5.5rem;
   }
-  
 }
 
 @media all and (max-width: 1120px) {
@@ -67,5 +66,16 @@ html.dark a {
   .product-img__wrapper {
     left: 5.5rem;
     top: 4.5rem;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .team-member-cart {
+    background: linear-gradient(
+      to right,
+      rgb(255 45 247 / 0.9),
+      rgb(82 0 255 / 0.9),
+      rgb(0 240 255 / 0.9)
+    );
   }
 }
