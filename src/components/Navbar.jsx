@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { IoIosArrowDown, IoMdSunny } from "react-icons/io";
 import { AiOutlineMenu } from "react-icons/ai";
-import MenuListItem from "./MenuListItem";
+import MenuListItem from "./modules/MenuListItem";
 
 function Navbar() {
   const [search, setSearch] = useState("");
@@ -57,13 +57,13 @@ function Navbar() {
         </div>
         <button
           type="button"
-          className="border-none hidden lg:block px-6 py-2 font-light outline-none"
+          className="border-none cursor-pointer hidden lg:block px-6 py-2 font-light outline-none"
         >
           Sign in
         </button>
         <button
           type="button"
-          className="border px-6 hidden lg:block py-2 border-[#9e9c9c] rounded-md font-light outline-none"
+          className="border cursor-pointer px-6 hidden lg:block py-2 border-[#9e9c9c] rounded-md font-light outline-none"
         >
           Sign in
         </button>

@@ -48,3 +48,24 @@ html.dark a {
         rgb(0 240 255 / 0.9)
       );
 }
+
+@media all and (max-width: 1180px) {
+  .product-img__wrapper {
+    left: 5.5rem ;
+  }
+  
+}
+
+@media all and (max-width: 1120px) {
+  .product-img__wrapper {
+    left: 6rem;
+    top: 5rem;
+  }
+}
+
+@media all and (max-width: 1010px) {
+  .product-img__wrapper {
+    left: 5.5rem;
+    top: 4.5rem;
+  }
+}
