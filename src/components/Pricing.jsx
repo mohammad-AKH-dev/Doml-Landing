@@ -27,14 +27,16 @@ function Pricing() {
   }
 
   return (
-    <section className="pricing-section container mx-auto mt-32">
-      <div className="pricing-section__content-wrapper  flex flex-col md:flex-row items-center justify-between px-12 rounded-3xl">
+    <section
+     className="pricing-section overflow-hidden container mx-auto mt-32">
+      <div className="pricing-section__content-wrapper py-6 flex flex-col md:flex-row items-center justify-between px-12 rounded-3xl">
         <motion.div
          variants={pricingLeftVariants}
          initial="initial"
          whileInView={"whileInView"} 
-         className="pricing-section-left__content sm:translate-x-[3rem] -translate-y-[8rem] md:translate-0 w-full md:w-[50%]">
+         className="pricing-section-left__content translate-x-[3rem] sm:translate-x-[5rem] md:translate-x-0  w-full md:w-[50%]">
           <motion.img
+            className="max-w-[70%] md:w-full"
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1 }}
             transition={{
@@ -49,13 +51,13 @@ function Pricing() {
         initial="initial"
         whileInView={"whileInView"}
         
-        className="pricing-section-right__content w-full -translate-y-[8rem] md:translate-0 text-center md:text-start md:w-[50%]">
+        className="pricing-section-right__content w-full mb-[5rem] md:mb-0 text-center md:text-start md:w-[50%]">
           <motion.h2 
           initial={{y: '-6rem' , scale: .9}}
           whileInView={{y: 0 , scale: 1}}
           transition={{
             delay: .5,
-            duration: 3
+            duration: 1.5
           }}
           className="pricing-section-right__content-title text-white text-[28px] sm:text-[40px] md:text-[28px] lg:text-[40px] 2xl:text-[50px] font-sans">
             Get exponential reach via{" "}
@@ -70,7 +72,7 @@ function Pricing() {
             <span className="block md:hidden font-bold">AI Marketing</span>
           </motion.h2>
           <motion.div
-           initial={{y: '10rem',opacity: 0}}
+           initial={{y: '5rem',opacity: 0}}
            whileInView={{y: 0 , opacity: 1}}
            transition={{
             duration: 2.5

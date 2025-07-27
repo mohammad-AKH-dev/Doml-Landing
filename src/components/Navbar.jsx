@@ -53,7 +53,7 @@ function Navbar() {
     <nav className="navbar fixed top-0 z-[999] left-0 bg-white dark:bg-[#000]">
       <div
         ref={navRef}
-        className={`navbar-content container flex items-center transition-all justify-between mx-auto  ${navRefClassNames} `}
+        className={`navbar-content container px-[1.5rem] sm:px-0 flex items-center transition-all justify-between mx-auto  ${navRefClassNames} `}
       >
         <div className="navbar-logo&menu__wrapper flex items-center gap-x-5">
           <a href="#" className="max-w-[101px]">
