@@ -50,7 +50,7 @@ function Landing() {
   };
 
   return (
-    <section className="landing-section mt-24 container mx-auto">
+    <section className="landing-section mt-24 overflow-x-hidden! container mx-auto">
       <div className="landing-section-content__wrapper flex flex-col-reverse md:flex-row gap-y-12 items-center justify-between">
         <motion.div
           initial="initial"

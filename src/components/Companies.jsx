@@ -43,7 +43,7 @@ function Companies() {
     { id: 18, title: "zoom", path: "/images/companies/Zoom.png" },
   ]);
   return (
-    <section className="companies-section container mx-auto mt-24">
+    <section className="companies-section overflow-x-hidden! container mx-auto mt-24">
       <motion.div 
       initial= {{x: '-5rem'}}
       whileInView={{x: 0}}
@@ -52,7 +52,7 @@ function Companies() {
         duration: 2,
         type: 'tween'
       }}
-      className="companies-section__content-wrapper flex items-center justify-center mx-auto gap-12 gap-x-6 md:gap-x-12 lg:gap-x-16 xl:gap-x-35 flex-wrap">
+      className="companies-section__content-wrapper  flex items-center justify-center mx-auto gap-12 gap-x-6 md:gap-x-12 lg:gap-x-16 xl:gap-x-35 flex-wrap">
         {companies.map((company) => (
           <Company key={company.id} {...company} />
         ))}

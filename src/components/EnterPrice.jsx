@@ -32,7 +32,7 @@ function EnterPrice() {
 
   return (
     <section
-      className="enter-price__section mt-32 container mx-auto"
+      className="enter-price__section mt-32 container mx-auto overflow-x-hidden!"
       id="enterprice"
     >
       <div className="enter-price__section-content flex flex-col-reverse lg:flex-row items-center gap-y-6 lg:justify-between mt-2">

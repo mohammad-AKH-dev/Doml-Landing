@@ -31,7 +31,7 @@ const productRightVariants = {
 
 function Product() {
   return (
-    <section className="product-section mt-48 container mx-auto" id="product">
+    <section className="product-section overflow-x-hidden! mt-48 container mx-auto" id="product">
       <p className="product-section-intro text-[20px] font-sans text-center">
         Trusted by the world’s most ambitious teams.
       </p>

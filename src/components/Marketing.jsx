@@ -33,7 +33,7 @@ function Marketing() {
 
   return (
     <section
-      className="marketing-section mt-32 container mx-auto"
+      className="marketing-section mt-32 overflow-x-hidden! container mx-auto"
       id="marketplace"
     >
       <div className="marketing-section__content-wrapper flex flex-col lg:flex-row items-center justify-between">

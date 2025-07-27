@@ -32,7 +32,7 @@ const exploreRightVariants = {
 
 function Explore() {
   return (
-    <section className="explore-section mt-32 container mx-auto" id="explore">
+    <section className="explore-section overflow-x-hidden! mt-32 container mx-auto" id="explore">
       <div className="explore-section__content-wrapper flex flex-col lg:flex-row items-center justify-between">
         <motion.div
           variants={exploreLeftVariants}
