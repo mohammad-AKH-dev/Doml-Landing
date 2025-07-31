@@ -66,10 +66,11 @@ function Product() {
         >
           <div
             className="product-img__wrapper hidden lg:block border border-[#9747FF] absolute rotate-45 max-w-[310px] max-h-[310px] xl:max-w-[371px] 
-          xl:max-h-[371px] 2xl:max-w-[471px] lg:top-[4.5rem] lg:left-[6.5rem] xl:top-[5rem] xl:left-[7rem]
-          2xl:left-[7rem]  2xl:top-[6rem] 2xl:max-h-[471px] inset-0 border-dashed"
+          xl:max-h-[371px] 2xl:max-w-[285px] lg:top-[4.5rem] lg:left-[6.5rem] xl:top-[5rem] xl:left-[7rem]
+          2xl:left-[11rem]  2xl:top-[4.5rem] 2xl:max-h-[285px] inset-0 border-dashed"
           ></div>
           <motion.img
+            className="2xl:max-w-[445px]"
             src="/images/cube.png"
             initial={{scale: .8}}
             whileInView={{scale: 1}}
